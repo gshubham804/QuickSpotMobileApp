@@ -1,4 +1,6 @@
+import {MagnifyingGlass} from 'phosphor-react-native';
 import React, {useState} from 'react';
+
 import {
   SafeAreaView,
   Text,
@@ -22,7 +24,9 @@ const Search = () => {
           value={text}
         />
         <TouchableOpacity className="bg-slate-200 p-5 rounded-full">
-          <Text>Search</Text>
+          <Text>
+            <MagnifyingGlass size={25} />
+          </Text>
         </TouchableOpacity>
       </View>
     </SafeAreaView>
